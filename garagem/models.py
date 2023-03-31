@@ -1,4 +1,4 @@
-    from django.db import models
+from django.db import models
 
 class Marca(models.Model):
     nome = models.CharField(max_length=50)
