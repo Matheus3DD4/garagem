@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="Categoria",
+            name="Marca",
             fields=[
                 (
                     "id",
@@ -21,7 +21,8 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("descricao", models.CharField(max_length=100)),
+                ('nome', models.CharField(max_length=50)),
+                ('nacionalidade', models.CharField(max_length=50)),
             ],
         ),
     ]
